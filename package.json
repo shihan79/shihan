@@ -4,11 +4,13 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d src"
   },
   "author": "",
   "license": "ISC",
+  "homepage":"https://shihan79.github.io/shihan",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "limbcss": "^1.0.4"
   }
 }
