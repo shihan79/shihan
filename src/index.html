@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="bg-back navbar">
+      <div class="container mx-auto lg:navbar-container relative">
+        <a href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+          <label
+            for="toggle-btn"
+            class="toggle-btn-responsive lg:toggle-btn"
+          >
+            &#8801;
+          </label>
+          <input id="toggle-btn" type="checkbox" hidden />
+          <div class="navbar-responsive lg:navbar-desktop">
+            <ul class="!gap-x-[100px]">
+              <li 
+                tabIndex={0}
+                class="dropdown-container-mobile lg:dropdown-container-dekstop"
+              >
+                <a class="relative hover:after:absolute hover:after:left-[14.5px] hover:after:bottom-0 hover:after:w-[20px] hover:after:h-[1px] hover:after:content[''] hover:after:bg-red-600">Home</a>
+                  <div class="dropdown bg-slate-200   ">
+                    <ol>
+                      <li>
+                        <a>Home One</a>
+                      </li>
+                      <li>
+                        <a>Home Two</a>
+                      </li>
+                      <li>
+                        <a>Home Three</a>
+                      </li>
+                    </ol>
+                  </div>
+              </li>
+              <li>
+                <a class="relative hover:after:absolute hover:after:left-[14.5px] hover:after:bottom-0 hover:after:w-[20px] hover:after:h-[1px] hover:after:content[''] hover:after:bg-red-600" >About</a>
+              </li>
+              <li>
+                <a class="relative hover:after:absolute hover:after:left-[14.5px] hover:after:bottom-0 hover:after:w-[20px] hover:after:h-[1px] hover:after:content[''] hover:after:bg-red-600">Service</a>
+              </li>
+              <li>
+                <a class="relative hover:after:absolute hover:after:left-[14.5px] hover:after:bottom-0 hover:after:w-[20px] hover:after:h-[1px] hover:after:content[''] hover:after:bg-red-600">Contact</a>
+              </li>
+            </ul>
+          
+          </div>
+      </div>
+    </nav>
+    <div class="banner bg-back">
+      <div class="container mx-auto lg:flex">
+        <div class="w-2/3">
+            <h1 class="sm:text-2xl font-pop font-semibold lg:text-4xl text-header lg:mt-[89px] mb-[24px]">Temukan Hunian Keluarga Sesuai Keinginanmu</h1>
+            <p class="font-pop font-light text-sm sm:text-base text-header/[.55] w-[324px] sm:w-[544px] mb-[56px]">Menyediakan hunian bagi keluarga anda dengan 
+                varian pilihan dan lokasi yang strategis di kota anda dengan cara yang lebih mudah.</p>
+                <div class=" relative w-[317px] sm:w-[667px] sm:h-[70px] bg-white border-2 border-transparent rounded-2xl flex pt-[23px] mb-[56px]">
+                  <img class="hidden sm:block w-[24px] h-[24px]  ml-[20px] mr-[12px]" src="images/Location.png" alt="location">
+                  <p class="scale-75 sm:scale-100 text-header/[.55]" >Search location, properties, residental group</p>
+                  <button class="hidden sm:block b-btn b-btn-primary mr-[78px]  sm:mr-[14px] px-[41px] py-[10px] absolute  sm:top-[10px] right-[14px] bg-header">Search</button>
+            
+                </div>
+                <div class="list flex flex-wrap text-header gap-x-[75px] mb-[60px]">
+                  <div class="div1">
+                    <h2 class="font-pop font-semibold text-[56px]">200<spun class="text-plus">+</spun></h2>
+                  <p class="w-[142px]">Residental grup telah bergabung</p>
+                  </div>
+                  <div class="div1">
+                    <h2 class="font-pop font-semibold text-[56px]" >10<spun class="text-plus">+</spun></h2>
+                  <p class="w-[142px]">Sudah berpengalaman </p>
+                  </div>
+                  <div class="div1">
+                    <h2 class="font-pop font-semibold text-[56px]">999<spun class="text-plus">+</spun></h2>
+                  <p class="w-[142px]">Properti tersedia di berbagai Kota</p>
+                  </div>
+                </div>
+        </div>
+        <div class="w-1/3 flex justify-end mt-[39px]">
+            <img class="hidden lg:block" src="images/banner.png" alt="banner">
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto">
+      <div class="property">
+        <h3 class="scale-75  font-pop font-semibold text-2xl sm:text-[36px] w-[350px] sm:w-[533px] mt-[100px] mb-[64px] text-header">Tahapan Pembelian Properti yang Mudah dan Cepat</h3>
+        <div class="part flex flex-wrap justify-between mb-[100px]">
+          <div class="part1 border-2  rounded relative py-[20px] px-[33px]">
+            <h3 class=" ml-[25px]  after:absolute after:top-[20px] after:left-0 after:w-[8px] after:h-[30px] after:content[''] after:bg-plus font-pop font-medium text-base text-header">Pilih Properti <span class="text-red-500 inline-block ml-[132px] mb-[8px]">01</span></h3>
+            <p class="text-header/[.55] w-[232px] ml-[25px] mb-[48px] font-pop font-light text-base">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini</p>
+            <div class="divk flex ml-[25px]">
+              <a class="relative after:-z-10 after:absolute  after:left-[-6px] after:top-[-2px] after:content[''] after:bg-header/[.55] after:w-[40px] after:h-[30px] hover:after:w-[177px] font-pop font-medium text-base">Baca lebih Lanjut</a>
+            <img class="w-[24px] h-[24px] mt-[2px]" src="images/Arrow right.png" alt="arrow">
+            </div>
+          </div>
+          <div class="part1 border-2  rounded relative py-[20px] px-[33px]">
+            <h3 class=" ml-[25px]  after:absolute after:top-[20px] after:left-0 after:w-[8px] after:h-[30px] after:content[''] after:bg-plus font-pop font-medium text-base text-header">Pilih Properti <span class="text-red-500 inline-block ml-[132px] mb-[8px]">01</span></h3>
+            <p class="text-header/[.55] w-[232px] ml-[25px] mb-[48px] font-pop font-light text-base">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini</p>
+            <div class="divk flex ml-[25px]">
+              <a class="relative after:-z-10 after:absolute  after:left-[-6px] after:top-[-2px] after:content[''] after:bg-header/[.55] after:w-[40px] after:h-[30px] hover:after:w-[177px] font-pop font-medium text-base">Baca lebih Lanjut</a>
+            <img class="w-[24px] h-[24px] mt-[2px]" src="images/Arrow right.png" alt="arrow">
+            </div>
+          </div>
+          <div class="part1 border-2  rounded relative py-[20px] px-[33px]">
+            <h3 class=" ml-[25px]  after:absolute after:top-[20px] after:left-0 after:w-[8px] after:h-[30px] after:content[''] after:bg-plus font-pop font-medium text-base text-header">Pilih Properti <span class="text-red-500 inline-block ml-[132px] mb-[8px]">01</span></h3>
+            <p class="text-header/[.55] w-[232px] ml-[25px] mb-[48px] font-pop font-light text-base">Cari properti yang diinginkan sesuai dengan kriteria anda dan keluarga. Cara memilih properti yang bijak dapat anda baca lebih lanjut di sini</p>
+            <div class="divk flex ml-[25px]">
+              <a class="relative after:-z-10 after:absolute  after:left-[-6px] after:top-[-2px] after:content[''] after:bg-header/[.55] after:w-[40px] after:h-[30px] hover:after:w-[177px] font-pop font-medium text-base">Baca lebih Lanjut</a>
+            <img class="w-[24px] h-[24px] mt-[2px]" src="images/Arrow right.png" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="favorit bg-back ">
+     <div class="container mx-auto">
+   <div class="lg:flex">
+    <div class="w-6/12">
+      <h3 class="font-pop font-medium text-base text-plus">Pilihan konsumen</h3>
+      <h4 class="font-pop font-semibold md:text-2xl lg:text-4xl text-header mt-2 sm:mb-16">Residen Favorit</h4>
+     <div class="relative sm:mb-[163px]">
+      <img class=" sm:block" src="images/favorit1.png" alt="favorit1">
+      <img class=" sm:block absolute top-[60px] left-[87px]" src="images/favorit2.png" alt="favorit2">
+     </div>
+    </div>
+    <div class="w-6/12">
+      <div class="text-start md:ml-[40px] ">
+        <h5 class="w-max sm:w-auto font-pop   font-semibold sm:text-2xl lg:text-4xl text-header sm:mt-[218px] mb-6">Bangunan yang dirancang<br> oleh Aristektur Handal</h5>
+      <p class="font-pop w-[246px] sm:w-auto text-sm  font-light sm:text-base">Tanpa diragukan, properti yang disediakan dalam webiste 
+        kami<br> merupakan hasil kerjasama secara profesional dengan para Arsitektur<br> ternama dan Developer yang terpercaya.</p>
+      </div>
+        <div class="flex justify-between sm:mt-12">
+          <a class="relative whitespace-nowrap  md:flex  border border-header text-header w-[234px] h-[50px] rounded-[10px] px-[41px] py-[13px] bg-transparent hover:text-white hover:bg-header md:ml-9" href="#"><img class="absolute left-1 w-6 h-6 mr-3" src="images/Phone.png" alt="phone" >Hubungi Kami</a>
+          <a class="whitespace-nowrap  md:flex  bg-header hover:bg-white hover:text-header text-white w-[234px] h-[50px] rounded-[10px] px-[41px] py-[13px]" href="#">Explore lebih banyak</a>
+        </div>
+    </div>
+   </div>
+     </div>
+    </div>
+    <div class="residen mb-[68px]">
+  <div class="container mx-auto">
+    <h3 class="font-pop font-medium text-base text-plus">Pilihan Auditor</h3>
+   <div class="flex justify-between">
+    <h4 class="font-pop font-semibold sm:text-2xl lg:text-4xl text-header mb-16">Residen Berbagai Kota</h4>
+   <div class="arrow ">
+    <a href="#"><img class="w-6 h-6 inline-block" src="images/back.png" alt="back"></a>
+    <a href="#"><img class="w-6 h-6 inline-block" src="images/forward.png" alt="forward"></a>
+    
+   </div>
+   </div>
+    <div class="flex justify-between flex-wrap ">
+      <div class="divlist w-[320px] sm:w-auto">
+        <img  src="images/residen1.png" alt="residen1">
+        <h4 class="font-pop font-medium text-2xl text-header mt-4">Magnolia Surabaya</h4>
+        <p class="font-pop font-light text-base text-header  sm:w-[356px]">Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake, Kec. Jatiuwung, Kota Tangerang, Banten 15136</p>
+      </div>
+      <div class="divlist w-[320px] sm:w-auto">
+        <img   src="images/residen2.png" alt="residen2">
+        <h4 class="font-pop font-medium text-2xl text-header mt-4">Pinang Residences</h4>
+        <p class="font-pop font-light text-base text-header w-[356px]">Jl. Deplu Raya No.16 RT.5, RW.003
+          Bintaro, Pesanggrahan, Jakarta Selatan 12330</p>
+      </div>
+      <div class="divlist w-[320px] sm:w-auto">
+        <img src="images/residen3.png" alt="residen3">
+        <h4 class="font-pop font-medium text-2xl text-header mt-4">South Grove</h4>
+        <p class="font-pop font-light text-base text-header w-[356px] mb-5">1 No.1, RT.1/RW.1, Lb. Bulus, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta<br> 12440</p>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="kami bg-back">
+<div class="container mx-auto">
+<div class="k1">
+  <div class="head lg:flex">
+    <h5 class="font-Pop font-semibold sm:text-2xl lg:text-4xl mt-12  mb-[63px] mr-[525px]">Hubungi Kami</h5>
+  <h5 class="font-Pop font-semibold sm:text-2xl lg:text-4xl mt-12">Penghargaan</h5>
+  </div>
+<div class="flex justify-between flex-wrap">
+<div class="part1 w-[243px] h-[178px] border border-plus/[.50] rounded-[10px] p-6 mr-12 mb-12">
+<div class="flex mb-6">
+ <img class="w-12 h-12 mr-4" src="images/Phone.png" alt="phone">
+ <div class="xy">
+   <h5>call</h5>
+   <p>+6281232936733</p>
+ </div>
+</div>
+<a class="border hover:bg-plus hover:text-white py-[13px] px-[61.5px] rounded-[10px] bg-plus/[.20] text-plus font-pop font-semibold text-base" href="#">Call Now</a>
+</div>
+<div class="part1 w-[306px] h-[178px] border border-plus/[.50] rounded-[10px] p-6 ">
+<div class="flex mb-6">
+<img class="w-12 h-12 mr-4" src="images/gmail.png" alt="gmail">
+<div class="xy">
+<h5>email</h5>
+<p>omahindev@gmail.com</p>
+</div>
+</div>
+<a class="border py-[13px] px-[61.5px] rounded-[10px] bg-plus  font-pop font-semibold text-base text-white hover:bg-plus/[.20]" href="#">Call Now</a>
+</div>
+<img class="w-[156px] h-[104px] " src="images/image 8.png" alt="image8">
+<img class="w-[211.5px] h-[152px] mt-[-29px]"  src="images/image 9.png" alt="image9">
+</div>
+
+</div>
+</div>
+    </div>
+    <div class="footer bg-header h-[104px]">
+      <div class="container mx-auto ">
+        <div class="foot flex justify-between">
+          <img class="mt-[31px]" src="images/footer logo.png" alt="footer logo">
+        <div class="flex pt-10 sm:gap-x-16">
+          <img class="w-6 h-6" src="images/Instagram.png" alt="Instagram">
+          <img class="w-6 h-6" src="images/Facebook.png" alt="Facebook">
+          <img class="w-6 h-6" src="images/Tumblr.png" alt="Tumblr">
+          <img class="w-6 h-6" src="images/Linkedin.png" alt="Linkedin">
+        </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
